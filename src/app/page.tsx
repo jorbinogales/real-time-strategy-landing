@@ -33,11 +33,11 @@ export default async function Home() {
           <p className="hero__tagline">{TAGLINE}</p>
           <div className="cta">
             <PlayOnline hasAccess={access} gameUrl={GAME_URL()} />
-            <button type="button" className="btn-hero btn-download" disabled aria-describedby="descarga-nota">
+            <a className="btn-hero btn-download" href="/descargar/windows" download="MasterWar-Setup.exe" aria-describedby="descarga-nota">
               <svg className="btn-hero__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" /></svg>
               <span className="btn-hero__label">DESCARGAR PARA WINDOWS</span>
-              <span id="descarga-nota" className="btn-hero__soon">Próximamente</span>
-            </button>
+              <span id="descarga-nota" className="btn-hero__soon">Windows 10/11</span>
+            </a>
           </div>
         </div>
       </section>
